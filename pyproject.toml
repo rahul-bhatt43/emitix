@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "emitix"
+dynamic = ["version"]
+description = "Lightweight event bus for Python applications"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["event", "events", "event-bus", "pubsub", "emitter", "signals"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Libraries",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "build", "twine"]
+
+[tool.hatch.version]
+path = "src/emitix/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/emitix"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
