@@ -1,5 +1,10 @@
 # emitix
 
+[![PyPI](https://img.shields.io/pypi/v/emitix)](https://pypi.org/project/emitix/)
+[![Python versions](https://img.shields.io/pypi/pyversions/emitix)](https://pypi.org/project/emitix/)
+[![Tests](https://github.com/rahul-bhatt43/emitix/actions/workflows/ci.yml/badge.svg)](https://github.com/rahul-bhatt43/emitix/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/pypi/l/emitix)](https://github.com/rahul-bhatt43/emitix/blob/main/LICENSE)
+
 Lightweight event bus for Python applications. No dependencies, fully typed, works with both sync and async code.
 
 ```bash
@@ -109,10 +114,14 @@ An exception raised by a handler propagates to the caller of `emit` and stops th
 ## Development
 
 ```bash
+git clone https://github.com/rahul-bhatt43/emitix.git
+cd emitix
 pip install -e ".[dev]"
 pytest
 ```
 
+Bug reports and pull requests are welcome on the [issue tracker](https://github.com/rahul-bhatt43/emitix/issues). Changes between releases are listed in the [changelog](https://github.com/rahul-bhatt43/emitix/blob/main/CHANGELOG.md).
+
 ## License
 
-MIT
+[MIT](https://github.com/rahul-bhatt43/emitix/blob/main/LICENSE)

@@ -25,6 +25,12 @@ dependencies = []
 [project.optional-dependencies]
 dev = ["pytest>=8", "build", "twine"]
 
+[project.urls]
+Homepage = "https://github.com/rahul-bhatt43/emitix"
+Repository = "https://github.com/rahul-bhatt43/emitix"
+Issues = "https://github.com/rahul-bhatt43/emitix/issues"
+Changelog = "https://github.com/rahul-bhatt43/emitix/blob/main/CHANGELOG.md"
+
 [tool.hatch.version]
 path = "src/emitix/__init__.py"
 
